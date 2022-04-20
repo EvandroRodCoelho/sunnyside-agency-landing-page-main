@@ -1,0 +1,503 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:wght@700;900&display=swap");
+body {
+  width: 100vw;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+.opacity {
+  opacity: 0.7;
+}
+
+.menu-mobile-active {
+  display: block;
+  background: #fff;
+}
+
+.menu-mobile {
+  display: none;
+}
+
+.container-text {
+  width: 50%;
+}
+
+.container-grid {
+  height: calc(100vh + 95px);
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 20px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.none {
+  display: none;
+}
+
+.menu-mobile-active {
+  transition: 2s;
+  display: block;
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 70%;
+  transform: translateY(-40px);
+}
+.menu-mobile-active .triangulo-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.menu-mobile-active .triangulo-container .triangulo {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 0 50px 50px;
+  border-color: transparent transparent #fcfcfc transparent;
+  transform: translateY(-71px);
+}
+.menu-mobile-active a {
+  padding: 10px;
+  font: "Barlow", sans-serif 600;
+  color: #32383e;
+}
+.menu-mobile-active li {
+  padding: 20px;
+  font-size: 1.25rem;
+}
+.menu-mobile-active .contact {
+  background-color: #FFFF00;
+  border-radius: 20px;
+}
+
+.menu-mobile {
+  display: none;
+}
+
+header {
+  height: 100vh;
+  width: 100%;
+  background: url(/img/images/desktop/image-header.jpg) no-repeat fixed;
+  background-size: cover;
+}
+header nav {
+  padding: 1.88rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header nav .menu {
+  display: none;
+}
+header nav ul {
+  display: flex;
+  align-items: center;
+  gap: 1.56rem;
+}
+header nav ul li a {
+  font-family: "Fraunces", serif;
+  color: #fff;
+}
+header nav ul li .contact {
+  background: #fff;
+  padding: 0.93rem;
+  font: "Barlow", sans-serif 600;
+  border-radius: 20px;
+  color: #000;
+}
+header nav ul li .contact:hover {
+  background-color: rgba(0, 206, 209, 0.5764705882);
+  color: #fff;
+  transition: 0.4s;
+}
+header .container-header {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: calc(100% - 6.25rem);
+  justify-content: center;
+  flex-direction: column;
+  font: "Barlow", sans-serif 600;
+  color: #fff;
+  gap: 20px;
+}
+header .container-header .header-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+header .container-header h1 {
+  font-size: 3rem;
+  letter-spacing: 20px;
+}
+
+main {
+  width: 100%;
+}
+main .grid-section {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+main .grid-section .container1 .container-text, main .grid-section .container4 .container-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1.25rem;
+  height: 80%;
+  width: 75%;
+  text-align: start;
+}
+main .grid-section .container1 .container-text h2, main .grid-section .container4 .container-text h2 {
+  font: "Fraunces", serif 900;
+  font-size: 2.3rem;
+}
+main .grid-section .container1 .container-text p, main .grid-section .container4 .container-text p {
+  color: #BEBEBE;
+  font-size: 1.1rem;
+  text-align: justify;
+}
+main .grid-section .container1 .container-text a, main .grid-section .container4 .container-text a {
+  font: "Barlow", sans-serif 600;
+  text-decoration: wavy;
+  text-decoration-color: #000;
+}
+main .grid-section .container2 {
+  background-image: url(../img/images/desktop/image-transform.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+main .grid-section .container2 a, main .grid-section .container2 h2, main .grid-section .container2 p {
+  visibility: hidden;
+}
+main .grid-section .container3 {
+  background: url(../img/images/desktop/image-stand-out.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+main .grid-section .container5 {
+  background: url(../img/images/desktop/image-graphic-design.jpg);
+}
+main .grid-section .container5 div h2, main .grid-section .container5 div p {
+  color: #008B8B;
+}
+main .grid-section .container6 {
+  background-image: url(../img/images/desktop/image-photography.jpg);
+}
+main .grid-section .container6 div h2, main .grid-section .container6 div p {
+  color: #000080;
+}
+main .grid-section .container5, main .grid-section .container6 {
+  justify-content: flex-end;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+main .grid-section .container5 div, main .grid-section .container6 div {
+  margin-bottom: 1.25rem;
+  text-align: center;
+  width: 80%;
+  height: 40%;
+}
+main .grid-section .container5 div h2, main .grid-section .container6 div h2 {
+  padding: 20px;
+}
+
+.section-testimonials {
+  width: 100%;
+  height: calc(100vh + 50px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.section-testimonials .title-testimonials {
+  font: "Fraunces", serif;
+  color: #BEBEBE;
+  font-size: 2rem;
+  letter-spacing: 5px;
+}
+.section-testimonials .testimonials {
+  gap: 1.25rem;
+  width: 100%;
+  height: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.section-testimonials .testimonials div {
+  width: 30%;
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+.section-testimonials .testimonials div p {
+  font-family: "Fraunces", serif;
+  color: #32383e;
+}
+.section-testimonials .testimonials div .person-information {
+  display: block;
+  width: 90%;
+  text-align: center;
+}
+.section-testimonials .testimonials div .person-information h4 {
+  font: "Barlow", sans-serif 600;
+}
+.section-testimonials .testimonials div .person-information span {
+  font: "Fraunces", serif;
+  color: #708090;
+}
+.section-testimonials div > img {
+  border-radius: 50%;
+}
+
+#gallery {
+  height: 50vh;
+  width: 100%;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+}
+#gallery div {
+  height: 100%;
+  background-repeat: no-repeat;
+  width: 25%;
+}
+#gallery #image-1 {
+  background: url(../img/images/desktop/image-gallery-milkbottles.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+#gallery #image-2 {
+  background: url(../img/images/desktop/image-gallery-orange.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+#gallery #image-3 {
+  background: url(../img/images/desktop/image-gallery-cone.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+#gallery #image-4 {
+  background: url(../img/images/desktop/image-gallery-sugarcubes.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+footer {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #00d7ab;
+  height: 50vh;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+footer ul {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+}
+footer ul li > a {
+  font-family: "Fraunces", serif;
+  color: #00ac89;
+  font-size: 1.25rem;
+}
+footer ul li > a:hover {
+  color: #fff;
+}
+footer div {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  padding: 1.56rem;
+  justify-content: center;
+}
+footer div img {
+  cursor: pointer;
+}
+
+@media (max-width: 500px) {
+  header {
+    height: 90vh;
+    width: 100%;
+    background: url(../img/images/mobile/image-header.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  header nav {
+    padding: 0;
+    justify-content: space-between;
+    height: 15%;
+  }
+  header nav ul {
+    display: none;
+  }
+  header nav ul li .contact {
+    background-color: #ffff00;
+  }
+  header nav ul li a {
+    font-size: 0.9rem;
+    color: #BEBEBE;
+    padding: 50px;
+  }
+  header nav .menu {
+    display: block;
+    cursor: pointer;
+    transform: translateX(-20px);
+  }
+  header .container-header h1 {
+    letter-spacing: 0px;
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  main .grid-section {
+    display: block;
+  }
+  main .grid-section .container1 {
+    background-image: url(../img/images/mobile/image-transform.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  main .grid-section .container1 h2, main .grid-section .container1 p, main .grid-section .container1 a {
+    display: none;
+  }
+  main .grid-section .container2 {
+    background-image: none;
+  }
+  main .grid-section .container2 h2, main .grid-section .container2 p, main .grid-section .container2 a {
+    visibility: visible;
+  }
+  main .grid-section .container2 h2 {
+    font: "Fraunces", serif 900;
+    font-size: 2.3rem;
+  }
+  main .grid-section .container2 p {
+    color: #BEBEBE;
+    font-size: 1.1rem;
+    text-align: justify;
+    padding: 1.25rem;
+  }
+  main .grid-section .container2 a {
+    font: "Barlow", sans-serif 600;
+    text-decoration: wavy;
+    text-decoration-color: #000;
+  }
+  main .grid-section .container3 {
+    background: url(../img/images/mobile/image-stand-out.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  main .grid-section .container5 {
+    background: url(../img/images/mobile/image-graphic-design.jpg) no-repeat center;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  main .section-testimonials {
+    display: block;
+  }
+  main .section-testimonials div {
+    padding: 0;
+    width: 100%;
+  }
+  main .section-testimonials .title-testimonials {
+    letter-spacing: 0px;
+  }
+  main .section-testimonials .title-testimonials h3 {
+    text-align: center;
+    font-size: 1.5rem;
+    letter-spacing: 4px;
+    padding: 20px;
+  }
+  main .section-testimonials .testimonials {
+    display: inline-block;
+  }
+  main .section-testimonials .testimonials div {
+    display: flex;
+    flex-direction: center;
+    width: 100%;
+    padding: 0;
+  }
+  main .section-testimonials .testimonials div img {
+    width: 55px;
+  }
+  main .section-testimonials .testimonials div div h4 {
+    font-size: 1rem;
+  }
+  main #gallery {
+    height: 50vh;
+    width: 100%;
+    z-index: 10;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 30px;
+  }
+  main #gallery div {
+    height: 100%;
+    background-repeat: no-repeat;
+    width: 100%;
+  }
+  main #gallery #image-1 {
+    background: url(../img/images/mobile/image-gallery-milkbottles.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  main #gallery #image-2 {
+    background: url(../img/images/mobile/image-gallery-orange.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  main #gallery #image-3 {
+    background: url(../img/images/mobile/image-gallery-cone.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  main #gallery #image-4 {
+    background: url(../img/images/mobile/image-gallery-sugar-cubes.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
