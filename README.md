@@ -14,7 +14,7 @@ https://evandrorodcoelho.github.io/sunnyside-agency-landing-page-main/
 
 
 ## clone repository:
-    git@github.com:EvandroRodCoelho/sunnyside-agency-landing-page-main.git
+    git clone https://github.com/EvandroRodCoelho/sunnyside-agency-landing-page-main.git
 
 ## Design:
 ![desktop-preview](https://user-images.githubusercontent.com/93017981/164262623-59c983c4-2783-4386-9d4c-f5c207d646d1.jpg)
